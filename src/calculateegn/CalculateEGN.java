@@ -75,13 +75,13 @@ public class CalculateEGN {
         int provinceNumber = 0;
         switch (province.toLowerCase()) {
             case "благоевград":
-                provinceNumber = getRandomNumberInRange(0, 44);
+                provinceNumber = getRandomNumberInRange(Province.БЛАГОЕВГРАД.getStartIndex(), Province.БЛАГОЕВГРАД.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "бургас":
-                provinceNumber = getRandomNumberInRange(44, 94);
+                provinceNumber = getRandomNumberInRange(Province.БУРГАС.getStartIndex(), Province.БУРГАС.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }

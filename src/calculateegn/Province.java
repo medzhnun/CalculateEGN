@@ -47,6 +47,14 @@ public enum Province {
         this.startIndex = startIndex;
         this.stopIndex = stopIndex;
     }
+
+    public int getStartIndex() {
+        return startIndex;
+    }
+
+    public int getStopIndex() {
+        return stopIndex;
+    }
     
     
 }
