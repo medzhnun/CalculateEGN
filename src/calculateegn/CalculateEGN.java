@@ -5,53 +5,12 @@
  */
 package calculateegn;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
 public class CalculateEGN {
     
-//    $EGN_WEIGHTS = array(2,4,8,5,10,9,7,3,6);
-//
-//                                           /* Отделени номера */
-//    $EGN_REGIONS["Благоевград"]       = 43;  /* от 000 до 043 */ 
-//    $EGN_REGIONS["Бургас"]            = 93;  /* от 044 до 093 */ 
-//    $EGN_REGIONS["Варна"]             = 139; /* от 094 до 139 */ 
-//    $EGN_REGIONS["Велико Търново"]    = 169; /* от 140 до 169 */ 
-//    $EGN_REGIONS["Видин"]             = 183; /* от 170 до 183 */ 
-//    $EGN_REGIONS["Враца"]             = 217; /* от 184 до 217 */ 
-//    $EGN_REGIONS["Габрово"]           = 233; /* от 218 до 233 */ 
-//    $EGN_REGIONS["Кърджали"]          = 281; /* от 234 до 281 */ 
-//    $EGN_REGIONS["Кюстендил"]         = 301; /* от 282 до 301 */ 
-//    $EGN_REGIONS["Ловеч"]             = 319; /* от 302 до 319 */ 
-//    $EGN_REGIONS["Монтана"]           = 341; /* от 320 до 341 */ 
-//    $EGN_REGIONS["Пазарджик"]         = 377; /* от 342 до 377 */ 
-//    $EGN_REGIONS["Перник"]            = 395; /* от 378 до 395 */ 
-//    $EGN_REGIONS["Плевен"]            = 435; /* от 396 до 435 */ 
-//    $EGN_REGIONS["Пловдив"]           = 501; /* от 436 до 501 */ 
-//    $EGN_REGIONS["Разград"]           = 527; /* от 502 до 527 */ 
-//    $EGN_REGIONS["Русе"]              = 555; /* от 528 до 555 */ 
-//    $EGN_REGIONS["Силистра"]          = 575; /* от 556 до 575 */ 
-//    $EGN_REGIONS["Сливен"]            = 601; /* от 576 до 601 */ 
-//    $EGN_REGIONS["Смолян"]            = 623; /* от 602 до 623 */ 
-//    $EGN_REGIONS["София - град"]      = 721; /* от 624 до 721 */ 
-//    $EGN_REGIONS["София - окръг"]     = 751; /* от 722 до 751 */ 
-//    $EGN_REGIONS["Стара Загора"]      = 789; /* от 752 до 789 */ 
-//    $EGN_REGIONS["Добрич (Толбухин)"] = 821; /* от 790 до 821 */ 
-//    $EGN_REGIONS["Търговище"]         = 843; /* от 822 до 843 */ 
-//    $EGN_REGIONS["Хасково"]           = 871; /* от 844 до 871 */ 
-//    $EGN_REGIONS["Шумен"]             = 903; /* от 872 до 903 */ 
-//    $EGN_REGIONS["Ямбол"]             = 925; /* от 904 до 925 */ 
-//    $EGN_REGIONS["Друг/Неизвестен"]   = 999; /* от 926 до 999 - Такъв регион понякога се ползва при
-//                                                                родени преди 1900, за родени в чужбина
-//                                                                или ако в даден регион се родят повече
-//                                                                деца от предвиденото. Доколкото ми е
-//                                                                известно няма правило при ползването
-    private static final String[] PROVINCES = new String[]{"Благоевград", "Бургас",
-        "Варна", "Велико Търново", "Видин", "Враца", "Габрово", "Кърджали", "Кюстендил", 
-        "Ловеч", "Монтана", "Пазарджик", "Перник", "Плевен", "Пловдив", "Разград", 
-        "Русе", "Силистра", "Сливен", "Смолян", "София-град", "София-окръг", 
-        "Стара Загора", "Добрич", "Търговище", "Хасково", "Шумен", "Ямбол", "Друг/Неизвестен"};
+
     /**
      * @param args the command line arguments
      */
@@ -129,121 +88,121 @@ public class CalculateEGN {
 //                }
                 break;
             case "ловеч":
-                provinceNumber = getRandomNumberInRange(302, 320);
+                provinceNumber = getRandomNumberInRange(Province.ЛОВЕЧ.getStartIndex(), Province.ЛОВЕЧ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "монтана":
-                provinceNumber = getRandomNumberInRange(320, 342);
+                provinceNumber = getRandomNumberInRange(Province.МОНТАНА.getStartIndex(), Province.МОНТАНА.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "пазарджик":
-                provinceNumber = getRandomNumberInRange(342, 378);
+                provinceNumber = getRandomNumberInRange(Province.ПАЗАРДЖИК.getStartIndex(), Province.ПАЗАРДЖИК.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "перник":
-                provinceNumber = getRandomNumberInRange(378, 396);
+                provinceNumber = getRandomNumberInRange(Province.ПЕРНИК.getStartIndex(), Province.ПЕРНИК.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "плевен":
-                provinceNumber = getRandomNumberInRange(396, 436);
+                provinceNumber = getRandomNumberInRange(Province.ПЛЕВЕН.getStartIndex(), Province.ПЛЕВЕН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "пловдив":
-                provinceNumber = getRandomNumberInRange(436, 502);
+                provinceNumber = getRandomNumberInRange(Province.ПЛОВДИВ.getStartIndex(), Province.ПЛОВДИВ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "разград":
-                provinceNumber = getRandomNumberInRange(502, 528);
+                provinceNumber = getRandomNumberInRange(Province.РАЗГРАД.getStartIndex(), Province.РАЗГРАД.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "русе":
-                provinceNumber = getRandomNumberInRange(528, 556);
+                provinceNumber = getRandomNumberInRange(Province.РУСЕ.getStartIndex(), Province.РУСЕ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "силистра":
-                provinceNumber = getRandomNumberInRange(556, 576);
+                provinceNumber = getRandomNumberInRange(Province.СИЛИСТРА.getStartIndex(), Province.СИЛИСТРА.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "сливен":
-                provinceNumber = getRandomNumberInRange(576, 602);
+                provinceNumber = getRandomNumberInRange(Province.СЛИВЕН.getStartIndex(), Province.СЛИВЕН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "смолян":
-                provinceNumber = getRandomNumberInRange(602, 624);
+                provinceNumber = getRandomNumberInRange(Province.СМОЛЯН.getStartIndex(), Province.СМОЛЯН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "софия - град":
-                provinceNumber = getRandomNumberInRange(624, 722);
+                provinceNumber = getRandomNumberInRange(Province.СОФИЯ_ГРАД.getStartIndex(), Province.СОФИЯ_ГРАД.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "софия - окръг":
-                provinceNumber = getRandomNumberInRange(722, 752);
+                provinceNumber = getRandomNumberInRange(Province.СОФИЯ_ОКРЪГ.getStartIndex(), Province.СОФИЯ_ОКРЪГ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "стара загора":
-                provinceNumber = getRandomNumberInRange(752, 790);
+                provinceNumber = getRandomNumberInRange(Province.СТАРА_ЗАГОРА.getStartIndex(), Province.СТАРА_ЗАГОРА.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "добрич":
-                provinceNumber = getRandomNumberInRange(790, 822);
+                provinceNumber = getRandomNumberInRange(Province.ДОБРИЧ.getStartIndex(), Province.ДОБРИЧ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "търговище":
-                provinceNumber = getRandomNumberInRange(822, 844);
+                provinceNumber = getRandomNumberInRange(Province.ТЪРГОВИЩЕ.getStartIndex(), Province.ТЪРГОВИЩЕ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "хасково":
-                provinceNumber = getRandomNumberInRange(844, 872);
+                provinceNumber = getRandomNumberInRange(Province.ХАСКОВО.getStartIndex(), Province.ХАСКОВО.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "шумен":
-                provinceNumber = getRandomNumberInRange(872, 904);
+                provinceNumber = getRandomNumberInRange(Province.ШУМЕН.getStartIndex(), Province.ШУМЕН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "ямбол":
-                provinceNumber = getRandomNumberInRange(904, 926);
+                provinceNumber = getRandomNumberInRange(Province.ЯМБОЛ.getStartIndex(), Province.ЯМБОЛ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "друг":
-                provinceNumber = getRandomNumberInRange(926, 999);
+                provinceNumber = getRandomNumberInRange(Province.ДРУГ_НЕИЗВЕСТЕН.getStartIndex(), Province.ДРУГ_НЕИЗВЕСТЕН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
