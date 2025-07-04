@@ -87,43 +87,43 @@ public class CalculateEGN {
 //                }
                 break;
             case "варна":
-                provinceNumber = getRandomNumberInRange(94, 140);
+                provinceNumber = getRandomNumberInRange(Province.ВАРНА.getStartIndex(), Province.ВАРНА.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "велико търново":
-                provinceNumber = getRandomNumberInRange(140, 170);
+                provinceNumber = getRandomNumberInRange(Province.ВЕЛИКО_ТЪРНОВО.getStartIndex(), Province.ВЕЛИКО_ТЪРНОВО.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "видин":
-                provinceNumber = getRandomNumberInRange(170, 184);
+                provinceNumber = getRandomNumberInRange(Province.ВИДИН.getStartIndex(), Province.ВИДИН.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "враца":
-                provinceNumber = getRandomNumberInRange(184, 218);
+                provinceNumber = getRandomNumberInRange(Province.ВРАЦА.getStartIndex(), Province.ВРАЦА.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "габрово":
-                provinceNumber = getRandomNumberInRange(218, 234);
+                provinceNumber = getRandomNumberInRange(Province.ГАБРОВО.getStartIndex(), Province.ГАБРОВО.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "кърджали":
-                provinceNumber = getRandomNumberInRange(234, 282);
+                provinceNumber = getRandomNumberInRange(Province.КЪРДЖАЛИ.getStartIndex(), Province.КЪРДЖАЛИ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
                 break;
             case "кюстендил":
-                provinceNumber = getRandomNumberInRange(282, 302);
+                provinceNumber = getRandomNumberInRange(Province.КЮСТЕНДИЛ.getStartIndex(), Province.КЮСТЕНДИЛ.getStopIndex());
 //                if ("м".equals(sex)) {
 //                    
 //                }
