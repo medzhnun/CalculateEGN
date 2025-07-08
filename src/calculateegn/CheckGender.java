@@ -12,10 +12,7 @@ public class CheckGender {
         this.isFemale = isFemale;
     }
 
-    public boolean isIsFemale() {
+    public boolean isFemale() {
         return isFemale;
     }
-    
-    
-    
 }
