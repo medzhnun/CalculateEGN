@@ -19,9 +19,9 @@ public class CheckEGN {
         } else if(Integer.parseInt(egn.substring(6, 9))>999 || Integer.parseInt(egn.substring(6, 9)) < 0){
             throw new IllegalArgumentException("Не съществуващ регион");
         } else if ((Integer.parseInt(egn.substring(2, 4)) > 12 && 
-                      Integer.parseInt(egn.substring(2, 4)) != 32 &&
-                      Integer.parseInt(egn.substring(2, 4)) !=52) ||
-                      Integer.parseInt(egn.substring(4, 6)) > 31){
+                      (Integer.parseInt(egn.substring(2, 4)) < 21 || Integer.parseInt(egn.substring(2, 4)) > 32) &&
+                      (Integer.parseInt(egn.substring(2, 4)) < 41 || Integer.parseInt(egn.substring(2, 4)) > 52) ||
+                      Integer.parseInt(egn.substring(4, 6)) > 31)){
             throw new IllegalArgumentException("Неправилна дата на раждане");
         } else {
             for (int i = 0; i < egn.length()-1; i++) {
