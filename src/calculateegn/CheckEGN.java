@@ -10,7 +10,7 @@ public class CheckEGN {
 
     private final int[] weights = {2, 4, 8, 5, 10, 9, 7, 3, 6};
     
-      
+     
     public boolean validateEGN(String egn){
         int tempEGN = 0;
         int checkDigit;
