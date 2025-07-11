@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package calculateegn;
+
+import calculateegn.controler.CheckEGN;
 
 /**
  *
@@ -11,7 +10,12 @@ package calculateegn;
 public class MainTest {
     public static void main(String[] args) {
         CheckEGN egn = new CheckEGN();
-        System.out.println(egn.validateEGN("6704148327"));
-    }
-    
+//        System.out.println(egn.validateEGN("6704148327"));
+//        System.out.println(egn.validateEGN("7507100466"));
+//        System.out.println(egn.validateEGN("1352205781"));
+        GenerateEGN newEGN = new GenerateEGN();
+        for (String s : newEGN.generateEGN(2013, 12, 20, Province.СЛИВЕН)) {
+            System.out.println(s);
+        }
+    }    
 }

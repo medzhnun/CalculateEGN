@@ -28,182 +28,182 @@ public class CalculateEGN {
         System.out.print("Въведете дата на раждане (дд.мм.гггг): ");
         String birthDate = scan.nextLine();
 //        System.out.print("Въведете пол (м/ж): ");
-//        String sex = scan.nextLine();
+//        String gender = scan.nextLine();
         System.out.print("Въведете областен град: ");
         String province = scan.nextLine();
         int provinceNumber = 0;
         switch (province.toLowerCase()) {
             case "благоевград":
                 provinceNumber = getRandomNumberInRange(Province.БЛАГОЕВГРАД.getStartIndex(), Province.БЛАГОЕВГРАД.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "бургас":
                 provinceNumber = getRandomNumberInRange(Province.БУРГАС.getStartIndex(), Province.БУРГАС.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "варна":
                 provinceNumber = getRandomNumberInRange(Province.ВАРНА.getStartIndex(), Province.ВАРНА.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "велико търново":
                 provinceNumber = getRandomNumberInRange(Province.ВЕЛИКО_ТЪРНОВО.getStartIndex(), Province.ВЕЛИКО_ТЪРНОВО.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "видин":
                 provinceNumber = getRandomNumberInRange(Province.ВИДИН.getStartIndex(), Province.ВИДИН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "враца":
                 provinceNumber = getRandomNumberInRange(Province.ВРАЦА.getStartIndex(), Province.ВРАЦА.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "габрово":
                 provinceNumber = getRandomNumberInRange(Province.ГАБРОВО.getStartIndex(), Province.ГАБРОВО.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "кърджали":
                 provinceNumber = getRandomNumberInRange(Province.КЪРДЖАЛИ.getStartIndex(), Province.КЪРДЖАЛИ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "кюстендил":
                 provinceNumber = getRandomNumberInRange(Province.КЮСТЕНДИЛ.getStartIndex(), Province.КЮСТЕНДИЛ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "ловеч":
                 provinceNumber = getRandomNumberInRange(Province.ЛОВЕЧ.getStartIndex(), Province.ЛОВЕЧ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "монтана":
                 provinceNumber = getRandomNumberInRange(Province.МОНТАНА.getStartIndex(), Province.МОНТАНА.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "пазарджик":
                 provinceNumber = getRandomNumberInRange(Province.ПАЗАРДЖИК.getStartIndex(), Province.ПАЗАРДЖИК.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "перник":
                 provinceNumber = getRandomNumberInRange(Province.ПЕРНИК.getStartIndex(), Province.ПЕРНИК.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "плевен":
                 provinceNumber = getRandomNumberInRange(Province.ПЛЕВЕН.getStartIndex(), Province.ПЛЕВЕН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "пловдив":
                 provinceNumber = getRandomNumberInRange(Province.ПЛОВДИВ.getStartIndex(), Province.ПЛОВДИВ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "разград":
                 provinceNumber = getRandomNumberInRange(Province.РАЗГРАД.getStartIndex(), Province.РАЗГРАД.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "русе":
                 provinceNumber = getRandomNumberInRange(Province.РУСЕ.getStartIndex(), Province.РУСЕ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "силистра":
                 provinceNumber = getRandomNumberInRange(Province.СИЛИСТРА.getStartIndex(), Province.СИЛИСТРА.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "сливен":
                 provinceNumber = getRandomNumberInRange(Province.СЛИВЕН.getStartIndex(), Province.СЛИВЕН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "смолян":
                 provinceNumber = getRandomNumberInRange(Province.СМОЛЯН.getStartIndex(), Province.СМОЛЯН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "софия - град":
                 provinceNumber = getRandomNumberInRange(Province.СОФИЯ_ГРАД.getStartIndex(), Province.СОФИЯ_ГРАД.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "софия - окръг":
                 provinceNumber = getRandomNumberInRange(Province.СОФИЯ_ОКРЪГ.getStartIndex(), Province.СОФИЯ_ОКРЪГ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "стара загора":
                 provinceNumber = getRandomNumberInRange(Province.СТАРА_ЗАГОРА.getStartIndex(), Province.СТАРА_ЗАГОРА.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "добрич":
                 provinceNumber = getRandomNumberInRange(Province.ДОБРИЧ.getStartIndex(), Province.ДОБРИЧ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "търговище":
                 provinceNumber = getRandomNumberInRange(Province.ТЪРГОВИЩЕ.getStartIndex(), Province.ТЪРГОВИЩЕ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "хасково":
                 provinceNumber = getRandomNumberInRange(Province.ХАСКОВО.getStartIndex(), Province.ХАСКОВО.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "шумен":
                 provinceNumber = getRandomNumberInRange(Province.ШУМЕН.getStartIndex(), Province.ШУМЕН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "ямбол":
                 provinceNumber = getRandomNumberInRange(Province.ЯМБОЛ.getStartIndex(), Province.ЯМБОЛ.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;
             case "друг":
                 provinceNumber = getRandomNumberInRange(Province.ДРУГ_НЕИЗВЕСТЕН.getStartIndex(), Province.ДРУГ_НЕИЗВЕСТЕН.getStopIndex());
-//                if ("м".equals(sex)) {
+//                if ("м".equals(gender)) {
 //                    
 //                }
                 break;           
