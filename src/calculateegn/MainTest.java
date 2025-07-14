@@ -1,7 +1,7 @@
 
 package calculateegn;
 
-import calculateegn.controler.CheckEGN;
+import calculateegn.controller.CheckEGN;
 
 /**
  *
@@ -14,7 +14,7 @@ public class MainTest {
 //        System.out.println(egn.validateEGN("7507100466"));
 //        System.out.println(egn.validateEGN("1352205781"));
         GenerateEGN newEGN = new GenerateEGN();
-        for (String s : newEGN.generateEGN(2013, 12, 20, Province.СЛИВЕН)) {
+        for (String s : newEGN.generateEGN(2002, 2, 20, Province.ДРУГ_НЕИЗВЕСТЕН)) {
             System.out.println(s);
         }
     }    

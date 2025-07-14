@@ -1,7 +1,7 @@
 
 package calculateegn;
 
-import calculateegn.controler.CheckDigitGenerator;
+import calculateegn.controller.CheckDigitGenerator;
 
 /**
  *
@@ -46,7 +46,7 @@ public class GenerateEGN {
             String egnWithoutCheck ;
             for (int i = 0; i <range; i++) {
                 egnWithoutCheck = shortDateTime.concat(String.format("%03d",province.getStartIndex()+i));
-                int checkDigit = new CheckDigitGenerator().geerateCheckDigit(egnWithoutCheck);
+                int checkDigit = new CheckDigitGenerator().generateCheckDigit(egnWithoutCheck);
                 generatedEGN[i] = egnWithoutCheck.concat(String.valueOf(checkDigit));
             }            
         }        

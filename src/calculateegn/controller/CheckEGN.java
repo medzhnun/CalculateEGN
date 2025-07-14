@@ -1,5 +1,5 @@
 
-package calculateegn.controler;
+package calculateegn.controller;
 
 
 /**
@@ -22,7 +22,7 @@ public class CheckEGN {
                       Integer.parseInt(egn.substring(4, 6)) > 31)){
             throw new IllegalArgumentException("Неправилна дата на раждане");
         } else {
-            check = new CheckDigitGenerator().geerateCheckDigit(egn.substring(0, 9));
+            check = new CheckDigitGenerator().generateCheckDigit(egn.substring(0, 9));
         }
         
         return Integer.parseInt(egn.substring(egn.length()-1)) == check;
