@@ -25,24 +25,24 @@ public class GenerateEGN {
     
     public String[] generateEGN(int year, int month, int day, Province province){
         int range = province.getStopIndex()-province.getStartIndex()+1;
-        String[] generatedEGN = new String[range];
+         String[] generatedEGN = new String[range];
         if (year < 1900) {
             month+=20;
         }
         if (year>1999) {
             month+=40;
         }
-        if (year >2099 || year <0) {
-            throw new IllegalArgumentException("Годината трябва да е по-малка от 2099 и да не е отрицателна");
+        if (year >2099 || year <= 1800) {
+            throw new IllegalArgumentException("Годината трябва да е между 1800 и 2099 и да не е отрицателна");
         } else if (month < 1 || (month<21 && month >32) ||(month<41 && month > 52 )) {
             throw new IllegalArgumentException("Месеца на раждане не е определен");
         } else if(day < 1 || day >31){
             throw new IllegalArgumentException("Денят на раждане не е определен");
         } else {
-            month = Integer.parseInt(String.format("%02d", month));
-            day = Integer.parseInt(String.format("%02d", day));
-             
-            String shortDateTime = String.valueOf(year%100).concat(String.valueOf(month)).concat(String.valueOf(day));
+
+            String shortDateTime = String.format("%02d", year%100)
+                                            .concat(String.format("%02d", month))
+                                            .concat(String.format("%02d", day));
             String egnWithoutCheck ;
             for (int i = 0; i <range; i++) {
                 egnWithoutCheck = shortDateTime.concat(String.format("%03d",province.getStartIndex()+i));
